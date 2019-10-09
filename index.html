@@ -13,11 +13,11 @@
             var oputput = document.getElementById('map'); 
 
                 if (navigator.geolocation) {
-
-
+                  output.innerHTML = "<p> Soporta tu navegador </p>";
+                }else{
+                    output.innerHTML = "<p> No soporta tu navegador </p>";
                 }
-         
-        }
+           }
        
         </script>
           
