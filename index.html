@@ -25,10 +25,16 @@
                     output.innerHTML = "<p> latitud: "+lat+" longitud: "+long+" </p>";
             
                }
+          
+           function error(){
+                        output.innerHTML = "<p> No obtiene tu ubicación </p>";
+                }
 
-           }
+                navigator.geolocation.getCurrentPosition(localizacion); 
+            
+            }
+         }
        
         </script>
-          
-       </body>
+      </body>
     </html>
